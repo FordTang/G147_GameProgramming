@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FightES</name>
+    <events>
+        <variable constant="0" name="Credits" static="0" type="number">0</variable>
+        <variable constant="0" name="MissileDamage" static="0" type="number">50</variable>
+        <variable constant="0" name="LaserDamage" static="0" type="number">10</variable>
+        <variable constant="0" name="LaserHeat" static="0" type="number">50</variable>
+        <variable constant="0" name="Tracking" static="0" type="number">0</variable>
+        <variable constant="0" name="Repair" static="0" type="number">0.1</variable>
+        <variable constant="0" name="ReloadSpeed" static="0" type="number">5</variable>
+        <variable constant="0" name="HeatSink" static="0" type="number">10</variable>
+        <variable constant="0" name="ShipRot" static="0" type="number">2</variable>
+        <variable constant="0" name="ShipEngine" static="0" type="number">100</variable>
+        <variable constant="0" name="Difficulty" static="0" type="number">1</variable>
+        <event-block>
+            <conditions>
+                <condition id="-1" name="Every tick" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" type="HeatBar">
+                    <param id="0" name="Width">ShipOne.Heat</param>
+                </action>
+                <action id="-5" name="Set width" type="ReloadingBar">
+                    <param id="0" name="Width">ShipOne.Reloading</param>
+                </action>
+                <action id="-5" name="Set width" type="HullBar">
+                    <param id="0" name="Width">ShipOne.Hull</param>
+                </action>
+                <action id="-5" name="Set width" type="EnemyBar">
+                    <param id="0" name="Width">Enemy.Hull/2</param>
+                </action>
+                <action id="0" name="Set text" type="Credits">
+                    <param id="0" name="Text">&quot;Credits:  &quot; &amp; Credits</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="-2" name="On start of layout" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" type="LaserCannon">
+                    <param id="0" name="Object">ShipOne</param>
+                    <param id="1" name="Image point (optional)">&quot;LeftHM&quot;</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" type="LaserCannon">
+                    <param id="0" name="Pin to">ShipOne</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" type="MissileLauncher">
+                    <param id="0" name="Object">ShipOne</param>
+                    <param id="1" name="Image point (optional)">&quot;RightHM&quot;</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" type="MissileLauncher">
+                    <param id="0" name="Pin to">ShipOne</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-15" name="Set visible" type="Thrust">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" type="Thrust">
+                    <param id="0" name="Object">ShipOne</param>
+                    <param id="1" name="Image point (optional)">&quot;Thruster&quot;</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" type="Thrust">
+                    <param id="0" name="Pin to">ShipOne</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-15" name="Set visible" type="Reverse">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" type="Reverse">
+                    <param id="0" name="Object">ShipOne</param>
+                    <param id="1" name="Image point (optional)">&quot;Reverse&quot;</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" type="Reverse">
+                    <param id="0" name="Pin to">ShipOne</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-15" name="Set visible" type="LeftRotator">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" type="LeftRotator">
+                    <param id="0" name="Object">ShipOne</param>
+                    <param id="1" name="Image point (optional)">&quot;RotateLeft&quot;</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" type="LeftRotator">
+                    <param id="0" name="Pin to">ShipOne</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-15" name="Set visible" type="RightRotator">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" type="RightRotator">
+                    <param id="0" name="Object">ShipOne</param>
+                    <param id="1" name="Image point (optional)">&quot;RotateRight&quot;</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" type="RightRotator">
+                    <param id="0" name="Pin to">ShipOne</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-8" name="Set angle" type="ShipOne">
+                    <param id="0" name="Angle">Random(360)</param>
+                </action>
+                <action id="-3" name="Set position" type="ShipOne">
+                    <param id="0" name="X">Random(LayoutWidth)</param>
+                    <param id="1" name="Y">Random(LayoutHeight)</param>
+                </action>
+                <action id="-8" name="Scroll to object" type="System">
+                    <param id="0" name="Object">ShipOne</param>
+                </action>
+                <action id="-3" name="Set position" type="Enemy">
+                    <param id="0" name="X">Random(LayoutWidth)</param>
+                    <param id="1" name="Y">Random(LayoutHeight)</param>
+                </action>
+                <action id="-4" name="Set position to another object" type="EnemyBar">
+                    <param id="0" name="Object">Enemy</param>
+                    <param id="1" name="Image point (optional)">&quot;EnemyBar&quot;</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" type="EnemyBar">
+                    <param id="0" name="Pin to">Enemy</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="-10" name="For" type="System">
+                            <param id="0" name="Name">&quot;enemySpawn&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">Random(Difficulty)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" type="System">
+                            <param id="0" name="Object to create">Enemy</param>
+                            <param id="1" name="Layer">&quot;Fight&quot;</param>
+                            <param id="2" name="X">Random(LayoutWidth)</param>
+                            <param id="3" name="Y">Random(LayoutHeight)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group collapsed="1" description="" title="Ship Movement">
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="2" name="Key is down" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="CustomMovement" id="4" name="Accelerate toward angle" type="ShipOne">
+                            <param id="0" name="Acceleration">ShipEngine</param>
+                            <param id="1" name="Angle">ShipOne.Angle</param>
+                        </action>
+                        <action id="-15" name="Set visible" type="Thrust">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="3" name="On key released" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" type="Thrust">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="2" name="Key is down" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="CustomMovement" id="4" name="Accelerate toward angle" type="ShipOne">
+                            <param id="0" name="Acceleration">-ShipEngine</param>
+                            <param id="1" name="Angle">ShipOne.Angle</param>
+                        </action>
+                        <action id="-15" name="Set visible" type="Reverse">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="3" name="On key released" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" type="Reverse">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="2" name="Key is down" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-19" name="Rotate counter-clockwise" type="ShipOne">
+                            <param id="0" name="Degrees">ShipRot</param>
+                        </action>
+                        <action id="-15" name="Set visible" type="LeftRotator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="3" name="On key released" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" type="LeftRotator">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="2" name="Key is down" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Rotate clockwise" type="ShipOne">
+                            <param id="0" name="Degrees">ShipRot</param>
+                        </action>
+                        <action id="-15" name="Set visible" type="RightRotator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="3" name="On key released" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" type="RightRotator">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition behavior="CustomMovement" id="1" name="Compare speed" type="ShipOne">
+                            <param id="0" name="Which">0</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Speed">ShipEngine - 1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="CustomMovement" id="2" name="Set speed" type="ShipOne">
+                            <param id="0" name="Which">0</param>
+                            <param id="1" name="Speed">ShipEngine</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" title="Weapons">
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="0" name="On click" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" type="ShipOne">
+                            <param id="0" name="Instance variable">Heat</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">100 - LaserHeat</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" type="LaserCannon">
+                            <param id="0" name="Object">Laser</param>
+                            <param id="1" name="Layer">&quot;Fight&quot;</param>
+                            <param id="2" name="Image point">&quot;Fire&quot;</param>
+                        </action>
+                        <action id="-11" name="Add to" type="ShipOne">
+                            <param id="0" name="Instance variable">Heat</param>
+                            <param id="1" name="Value">LaserHeat</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="0" name="On click" type="Mouse">
+                            <param id="0" name="Mouse button">2</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" type="ShipOne">
+                            <param id="0" name="Instance variable">Reloading</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" type="MissileLauncher">
+                            <param id="0" name="Object">Missile</param>
+                            <param id="1" name="Layer">&quot;Fight&quot;</param>
+                            <param id="2" name="Image point">&quot;Fire&quot;</param>
+                        </action>
+                        <action id="-11" name="Add to" type="ShipOne">
+                            <param id="0" name="Instance variable">Reloading</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" type="ShipOne">
+                            <param id="0" name="Instance variable">Heat</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" type="ShipOne">
+                            <param id="0" name="Instance variable">Heat</param>
+                            <param id="1" name="Value">HeatSink</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" type="ShipOne">
+                            <param id="0" name="Instance variable">Reloading</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" type="ShipOne">
+                            <param id="0" name="Instance variable">Reloading</param>
+                            <param id="1" name="Value">ReloadSpeed</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="0" name="On collision with another object" type="Laser">
+                            <param id="0" name="Object">Enemy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" type="Laser" />
+                        <action id="-12" name="Subtract from" type="Enemy">
+                            <param id="0" name="Instance variable">Hull</param>
+                            <param id="1" name="Value">LaserDamage</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="0" name="On collision with another object" type="Missile">
+                            <param id="0" name="Object">Enemy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" type="Missile" />
+                        <action id="-12" name="Subtract from" type="Enemy">
+                            <param id="0" name="Instance variable">Hull</param>
+                            <param id="1" name="Value">MissileDamage</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" type="ShipOne">
+                            <param id="0" name="Instance variable">Hull</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" type="ShipOne">
+                            <param id="0" name="Instance variable">Hull</param>
+                            <param id="1" name="Value">Repair</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-14" name="Compare variable" type="System">
+                            <param id="0" name="Variable">Tracking</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-15" name="Pick nearest/furthest" type="Enemy">
+                            <param id="0" name="Which">0</param>
+                            <param id="1" name="X">ShipOne.X</param>
+                            <param id="2" name="Y">ShipOne.Y</param>
+                        </condition>
+                        <condition id="-1" name="Every tick" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Rotate toward position" type="Missile">
+                            <param id="0" name="Degrees">2</param>
+                            <param id="1" name="X">Enemy.X</param>
+                            <param id="2" name="Y">Enemy.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" type="ShipOne">
+                            <param id="0" name="Instance variable">Hull</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" type="ShipOne" />
+                        <action id="0" name="Spawn another object" type="ShipOne">
+                            <param id="0" name="Object">Explosion</param>
+                            <param id="1" name="Layer">&quot;Fight&quot;</param>
+                            <param id="2" name="Image point">&quot;Origin&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" type="LaserCannon" />
+                        <action id="0" name="Spawn another object" type="LaserCannon">
+                            <param id="0" name="Object">Explosion</param>
+                            <param id="1" name="Layer">&quot;Fight&quot;</param>
+                            <param id="2" name="Image point">&quot;Origin&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" type="MissileLauncher" />
+                        <action id="0" name="Spawn another object" type="MissileLauncher">
+                            <param id="0" name="Object">Explosion</param>
+                            <param id="1" name="Layer">&quot;Fight&quot;</param>
+                            <param id="2" name="Image point">&quot;Origin&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" title="Enemy">
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition behavior="Bullet" id="0" name="Compare speed" type="Enemy">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Speed">Enemy.Engine</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" type="Enemy">
+                            <param id="0" name="Speed">Enemy.Engine * Difficulty</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-1" name="Every tick" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Rotate toward position" type="Enemy">
+                            <param id="0" name="Degrees">Enemy.Rotators * Difficulty</param>
+                            <param id="1" name="X">ShipOne.X</param>
+                            <param id="2" name="Y">ShipOne.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" type="System">
+                            <param id="0" name="Interval (seconds)">5 - Difficulty</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" type="Enemy">
+                            <param id="0" name="Object">EnemyShot</param>
+                            <param id="1" name="Layer">&quot;Fight&quot;</param>
+                            <param id="2" name="Image point">&quot;Cannon&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" type="Enemy">
+                            <param id="0" name="Instance variable">Hull</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" type="Enemy" />
+                        <action id="0" name="Spawn another object" type="Enemy">
+                            <param id="0" name="Object">Explosion</param>
+                            <param id="1" name="Layer">&quot;Fight&quot;</param>
+                            <param id="2" name="Image point">&quot;Origin&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" type="System">
+                            <param id="0" name="Variable">Credits</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="0" name="On collision with another object" type="EnemyShot">
+                            <param id="0" name="Object">ShipOne</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" type="EnemyShot" />
+                        <action id="-12" name="Subtract from" type="ShipOne">
+                            <param id="0" name="Instance variable">Hull</param>
+                            <param id="1" name="Value">EnemyShot.Damage * Difficulty</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-19" name="On destroyed" type="Enemy" />
+                        <condition id="-7" name="Compare instance variable" type="EnemyBar">
+                            <param id="0" name="Instance variable">Number</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Enemy.Number</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" type="EnemyBar" />
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-18" name="On created" type="Enemy" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" type="ID">
+                            <param id="0" name="Instance variable">Number</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-3" name="Create object" type="System">
+                            <param id="0" name="Object to create">EnemyBar</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-10" name="Set value" type="Enemy">
+                            <param id="0" name="Instance variable">Number</param>
+                            <param id="1" name="Value">ID.Number</param>
+                        </action>
+                        <action id="-10" name="Set value" type="EnemyBar">
+                            <param id="0" name="Instance variable">Number</param>
+                            <param id="1" name="Value">ID.Number</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" type="EnemyBar">
+                            <param id="0" name="Object">Enemy</param>
+                            <param id="1" name="Image point (optional)">&quot;EnemyBar&quot;</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" type="EnemyBar">
+                            <param id="0" name="Pin to">Enemy</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" type="Enemy">
+                            <param id="0" name="Angle">Random(360)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block>
+            <conditions>
+                <condition id="-8" name="Compare two values" type="System">
+                    <param id="0" name="First value">Enemy.Count</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Difficulty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Go to layout" type="System">
+                    <param id="0" name="Layout">Map</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block>
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

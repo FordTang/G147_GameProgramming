@@ -1,0 +1,12 @@
+Content\banana_256.xnb
+Content\happy_128.xnb
+Content\pineapple_256.xnb
+Content\Background01.xnb
+Content\Background02.xnb
+Content\Background03.xnb
+Content\Background04.xnb
+Content\Background05.xnb
+Content\SpriteFont1.xnb
+Content\callmemaybe.xnb
+Content\callmemaybe.wma
+Content\gorilla.xnb

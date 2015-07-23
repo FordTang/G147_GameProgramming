@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ch4hw_group", "ch4hw_group\ch4hw_group\ch4hw_group.csproj", "{DD6A8A4F-D628-458D-84B0-8393D5208F36}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "ch4hw_groupContent", "ch4hw_group\ch4hw_groupContent\ch4hw_groupContent.contentproj", "{8EF70500-01BA-435A-85F1-02EE0A969AE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD6A8A4F-D628-458D-84B0-8393D5208F36}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{DD6A8A4F-D628-458D-84B0-8393D5208F36}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{DD6A8A4F-D628-458D-84B0-8393D5208F36}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{DD6A8A4F-D628-458D-84B0-8393D5208F36}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{DD6A8A4F-D628-458D-84B0-8393D5208F36}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{DD6A8A4F-D628-458D-84B0-8393D5208F36}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{8EF70500-01BA-435A-85F1-02EE0A969AE5}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{8EF70500-01BA-435A-85F1-02EE0A969AE5}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

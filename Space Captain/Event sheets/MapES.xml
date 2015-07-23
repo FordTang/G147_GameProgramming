@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MapES</name>
+    <events>
+        <variable constant="0" name="msx1" static="0" type="number">100</variable>
+        <variable constant="0" name="msy1" static="0" type="number">360</variable>
+        <variable constant="0" name="x1" static="0" type="number">0</variable>
+        <variable constant="0" name="x2" static="0" type="number">0</variable>
+        <variable constant="0" name="x3" static="0" type="number">0</variable>
+        <variable constant="0" name="x4" static="0" type="number">0</variable>
+        <variable constant="0" name="y1" static="0" type="number">0</variable>
+        <variable constant="0" name="y2" static="0" type="number">0</variable>
+        <variable constant="0" name="y3" static="0" type="number">0</variable>
+        <variable constant="0" name="y4" static="0" type="number">0</variable>
+        <variable constant="0" name="f1" static="0" type="number">0</variable>
+        <variable constant="0" name="f2" static="0" type="number">0</variable>
+        <variable constant="0" name="f3" static="0" type="number">0</variable>
+        <variable constant="0" name="f4" static="0" type="number">0</variable>
+        <variable constant="0" name="spx1" static="0" type="number">0</variable>
+        <variable constant="0" name="spy1" static="0" type="number">0</variable>
+        <event-block>
+            <conditions>
+                <condition id="-14" name="Compare variable" type="System">
+                    <param id="0" name="Variable">Difficulty</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">x1</param>
+                    <param id="1" name="Value">Random(LayoutWidth/3 - 50) + LayoutWidth/3 + 50</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">x2</param>
+                    <param id="1" name="Value">Random(LayoutWidth/3 - 50) + (2 * LayoutWidth/3) + 50</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">x3</param>
+                    <param id="1" name="Value">Random(LayoutWidth/3 - 50) + 50</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">x4</param>
+                    <param id="1" name="Value">Random(LayoutWidth/3 - 50) + LayoutWidth/3 + 50</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">y1</param>
+                    <param id="1" name="Value">Random(LayoutHeight/2 - 50) + 50</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">y2</param>
+                    <param id="1" name="Value">Random(LayoutHeight/2 - 50) + 50</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">y3</param>
+                    <param id="1" name="Value">Random(LayoutHeight/2 - 100) + LayoutHeight/2 + 100</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">y4</param>
+                    <param id="1" name="Value">Random(LayoutHeight/2 - 50) + LayoutHeight/2 + 50</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">f1</param>
+                    <param id="1" name="Value">Random(Star.AnimationFrameCount)</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">f2</param>
+                    <param id="1" name="Value">Random(Star.AnimationFrameCount)</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">f3</param>
+                    <param id="1" name="Value">Random(Star.AnimationFrameCount)</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">f4</param>
+                    <param id="1" name="Value">Random(Star.AnimationFrameCount)</param>
+                </action>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">Difficulty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">spx1</param>
+                    <param id="1" name="Value">Random(LayoutWidth/3 - 50) + 50</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">spy1</param>
+                    <param id="1" name="Value">Random(LayoutHeight/2 - 100) + 50</param>
+                </action>
+                <action id="0" name="Set text" type="Dialogue">
+                    <param id="0" name="Text">&quot;Report from Central Command:  There is an infectious disease that have turned some ships hostile.  We must find a way to stop this terrible threat.&quot; &amp; newline &amp; newline &amp;  &quot;Mission:  Patrol the star systems and find the cause of the infection.&quot;  &amp; newline &amp; newline &amp; &quot;Help us, Captain.  You&apos;re our only hope!&quot; &amp; newline &amp; newline &amp; newline &amp; &quot;Additional Notes:  Move with AWSD, fire lasers with Left Click, fire Missiles with Right Click.  Each Enemy destroyed gives 1(one) credit.  Upgrades are available at the Star Port.&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" type="Dialogue">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-3" name="Set position" type="StarPort">
+                    <param id="0" name="X">spx1</param>
+                    <param id="1" name="Y">spy1</param>
+                </action>
+                <action id="-3" name="Set position" type="Star">
+                    <param id="0" name="X">x1</param>
+                    <param id="1" name="Y">y1</param>
+                </action>
+                <action id="5" name="Set frame" type="Star">
+                    <param id="0" name="Frame number">f1</param>
+                </action>
+                <action id="-3" name="Create object" type="System">
+                    <param id="0" name="Object to create">Star</param>
+                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                    <param id="2" name="X">x2</param>
+                    <param id="3" name="Y">y2</param>
+                </action>
+                <action id="5" name="Set frame" type="Star">
+                    <param id="0" name="Frame number">f2</param>
+                </action>
+                <action id="-3" name="Create object" type="System">
+                    <param id="0" name="Object to create">Star</param>
+                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                    <param id="2" name="X">x3</param>
+                    <param id="3" name="Y">y3</param>
+                </action>
+                <action id="5" name="Set frame" type="Star">
+                    <param id="0" name="Frame number">f3</param>
+                </action>
+                <action id="-3" name="Create object" type="System">
+                    <param id="0" name="Object to create">Star</param>
+                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                    <param id="2" name="X">x4</param>
+                    <param id="3" name="Y">y4</param>
+                </action>
+                <action id="5" name="Set frame" type="Star">
+                    <param id="0" name="Frame number">f4</param>
+                </action>
+                <action id="-3" name="Set position" type="MapShip">
+                    <param id="0" name="X">msx1</param>
+                    <param id="1" name="Y">msy1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="-2" name="On start of layout" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" type="StarPort">
+                    <param id="0" name="X">spx1</param>
+                    <param id="1" name="Y">spy1</param>
+                </action>
+                <action id="-3" name="Set position" type="Star">
+                    <param id="0" name="X">x1</param>
+                    <param id="1" name="Y">y1</param>
+                </action>
+                <action id="5" name="Set frame" type="Star">
+                    <param id="0" name="Frame number">f1</param>
+                </action>
+                <action id="-3" name="Create object" type="System">
+                    <param id="0" name="Object to create">Star</param>
+                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                    <param id="2" name="X">x2</param>
+                    <param id="3" name="Y">y2</param>
+                </action>
+                <action id="5" name="Set frame" type="Star">
+                    <param id="0" name="Frame number">f2</param>
+                </action>
+                <action id="-3" name="Create object" type="System">
+                    <param id="0" name="Object to create">Star</param>
+                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                    <param id="2" name="X">x3</param>
+                    <param id="3" name="Y">y3</param>
+                </action>
+                <action id="5" name="Set frame" type="Star">
+                    <param id="0" name="Frame number">f3</param>
+                </action>
+                <action id="-3" name="Create object" type="System">
+                    <param id="0" name="Object to create">Star</param>
+                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                    <param id="2" name="X">x4</param>
+                    <param id="3" name="Y">y4</param>
+                </action>
+                <action id="5" name="Set frame" type="Star">
+                    <param id="0" name="Frame number">f4</param>
+                </action>
+                <action id="-3" name="Set position" type="MapShip">
+                    <param id="0" name="X">msx1</param>
+                    <param id="1" name="Y">msy1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="-14" name="Compare variable" type="System">
+                            <param id="0" name="Variable">Difficulty</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" type="BOSS">
+                            <param id="0" name="X">Random(380) + 840</param>
+                            <param id="1" name="Y">Random(300) + 380</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group collapsed="1" description="" title="Ship Movement">
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="2" name="Key is down" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="CustomMovement" id="4" name="Accelerate toward angle" type="MapShip">
+                            <param id="0" name="Acceleration">ShipEngine /2</param>
+                            <param id="1" name="Angle">MapShip.Angle</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="2" name="Key is down" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="CustomMovement" id="4" name="Accelerate toward angle" type="MapShip">
+                            <param id="0" name="Acceleration">-ShipEngine/2</param>
+                            <param id="1" name="Angle">MapShip.Angle</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="2" name="Key is down" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-19" name="Rotate counter-clockwise" type="MapShip">
+                            <param id="0" name="Degrees">ShipRot/2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="2" name="Key is down" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Rotate clockwise" type="MapShip">
+                            <param id="0" name="Degrees">ShipRot/2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition behavior="CustomMovement" id="1" name="Compare speed" type="MapShip">
+                            <param id="0" name="Which">0</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Speed">MapShip.Engine/2 - 1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="CustomMovement" id="2" name="Set speed" type="MapShip">
+                            <param id="0" name="Which">0</param>
+                            <param id="1" name="Speed">ShipEngine/2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block collapsed="1">
+            <conditions>
+                <condition id="-9" name="Is visible" type="Dialogue" />
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="1" name="On any key pressed" type="Keyboard" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" type="Dialogue">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-13" name="Set time scale" type="System">
+                            <param id="0" name="Time scale">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="0" name="On collision with another object" type="MapShip">
+                    <param id="0" name="Object">Star</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">msx1</param>
+                    <param id="1" name="Value">Star.X</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">msy1</param>
+                    <param id="1" name="Value">Star.Y + 100</param>
+                </action>
+                <action id="-2" name="Go to layout" type="System">
+                    <param id="0" name="Layout">Fight</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

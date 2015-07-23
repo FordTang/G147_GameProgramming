@@ -1,0 +1,16 @@
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\bin\Windows Phone\Debug\Content\ak47.xnb
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\bin\Windows Phone\Debug\Content\colt.xnb
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\bin\Windows Phone\Debug\Content\revolver.xnb
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\bin\Windows Phone\Debug\Content\shotgun.xnb
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\bin\Windows Phone\Debug\ch4hw_mobile.dll
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\bin\Windows Phone\Debug\ch4hw_mobile.pdb
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\obj\Windows Phone\Debug\ch4hw_mobile.dll
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\obj\Windows Phone\Debug\ch4hw_mobile.pdb
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\obj\Windows Phone\Debug\WMAppManifest.xml
+bin\Windows Phone\Debug\
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\bin\Windows Phone\Debug\ch4hw_mobile.xap
+C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\obj\Windows Phone\Debug\XapCacheFile.xml

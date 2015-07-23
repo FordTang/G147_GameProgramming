@@ -1,0 +1,10 @@
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\bin\x86\Debug\Content\nes.xnb
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\bin\x86\Debug\Content\snes.xnb
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\bin\x86\Debug\Content\xbox.xnb
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\bin\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\bin\x86\Debug\Tutorial.exe
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\bin\x86\Debug\Tutorial.pdb
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\obj\x86\Debug\Tutorial.exe
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\obj\x86\Debug\Tutorial.pdb

@@ -1,0 +1,4 @@
+Content\ak47.xnb
+Content\colt.xnb
+Content\revolver.xnb
+Content\shotgun.xnb

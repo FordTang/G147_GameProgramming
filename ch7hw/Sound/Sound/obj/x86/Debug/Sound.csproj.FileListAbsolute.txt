@@ -1,0 +1,6 @@
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Sound\Sound\bin\x86\Debug\Sound.exe
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Sound\Sound\bin\x86\Debug\Sound.pdb
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Sound\Sound\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Sound\Sound\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Sound\Sound\obj\x86\Debug\Sound.exe
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Sound\Sound\obj\x86\Debug\Sound.pdb

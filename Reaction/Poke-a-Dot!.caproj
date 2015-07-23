@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Poke-a-Dot!</name>
+    <description>Test your Reaction by destroying dots!  Go for the highest score!</description>
+    <version>1.0</version>
+    <author>Ford Tang</author>
+    <unique-id>313dg62zs62jg</unique-id>
+    <saved-with-version>10802</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1366</width>
+        <height>768</height>
+    </window-size>
+    <pixel-rounding>1</pixel-rounding>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">No</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use iOS retina display">Yes</prop>
+    </configuration-settings>
+    <object-folder expanded="1">
+        <object-type name="Circle">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.141667" y="0.141667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.858333" y="0.141667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.858333" y="0.858333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.141667" y="0.858333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.141667" y="0.141667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.858333" y="0.125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.858333" y="0.858333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.141667" y="0.858333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.141667" y="0.141667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.858333" y="0.141667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.858333" y="0.858333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.141667" y="0.858333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.141667" y="0.141667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.858333" y="0.141667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.858333" y="0.858333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.141667" y="0.858333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.141667" y="0.141667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.858333" y="0.141667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.858333" y="0.858333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.141667" y="0.858333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.141667" y="0.141667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.858333" y="0.141667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.858333" y="0.858333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.141667" y="0.858333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.141667" y="0.141667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.858333" y="0.141667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.858333" y="0.858333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.141667" y="0.858333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Touch">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="TimeLeft">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="TimeLeft" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Score">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Level">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="StartButton">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Start">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0898438" y="0.0898438" />
+                            <point x="0.5" y="0.167969" />
+                            <point x="0.710938" y="0.289063" />
+                            <point x="0.898438" y="0.5" />
+                            <point x="0.953125" y="0.953125" />
+                            <point x="0.5" y="0.976563" />
+                            <point x="0.046875" y="0.953125" />
+                            <point x="0.0898438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WebStorage">
+            <plugin id="WebStorage" />
+        </object-type>
+        <object-type global="1" name="ScoreTable">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="HighScores">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="High1">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="High2">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="High3">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="GoodJob">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="again">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Fade" type="number" />
+            </instance-variables>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.210938" y="0.210938" />
+                            <point x="0.5" y="0.0507813" />
+                            <point x="0.84375" y="0.15625" />
+                            <point x="0.964844" y="0.5" />
+                            <point x="0.84375" y="0.84375" />
+                            <point x="0.5" y="0.265625" />
+                            <point x="0.433594" y="0.566406" />
+                            <point x="0.015625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlayerScore">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Multiplier">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="Multiplier" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Audio">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Title">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder expanded="1">
+        <layout>Game.xml</layout>
+        <layout>Menu.xml</layout>
+        <layout>End.xml</layout>
+    </layout-folder>
+    <event-folder expanded="1">
+        <event-sheet>GameES.xml</event-sheet>
+        <event-sheet>MenuES.xml</event-sheet>
+        <event-sheet>EndES.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" />
+        <global-instance type="Touch">
+            <properties>
+                <use-mouse-input>No</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="WebStorage" />
+        <global-instance type="Audio">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder expanded="1">
+        <file name="105020__xitherun__lsdj-kick.m4a" />
+        <file name="105020__xitherun__lsdj-kick.ogg" />
+        <file name="105020__xitherun__lsdj-kick.wav" />
+        <file name="LevelUp.m4a" />
+        <file name="LevelUp.ogg" />
+        <file name="LevelUp.wav" />
+    </sounds-folder>
+    <music-folder expanded="1">
+        <file name="BGM.m4a" />
+        <file name="BGM.ogg" />
+        <file name="BGM.wav" />
+    </music-folder>
+    <files-folder expanded="1" />
+</c2project>

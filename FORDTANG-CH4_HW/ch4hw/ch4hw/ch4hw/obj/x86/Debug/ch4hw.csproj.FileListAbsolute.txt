@@ -1,0 +1,10 @@
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\bin\x86\Debug\Content\ak47.xnb
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\bin\x86\Debug\Content\colt.xnb
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\bin\x86\Debug\Content\revolver.xnb
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\bin\x86\Debug\Content\shotgun.xnb
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\bin\x86\Debug\ch4hw.exe
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\bin\x86\Debug\ch4hw.pdb
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\obj\x86\Debug\ch4hw.exe
+C:\Users\C02122472\Desktop\ch4hw\ch4hw\ch4hw\obj\x86\Debug\ch4hw.pdb

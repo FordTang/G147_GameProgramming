@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>ak47.png</Source>
+      <Name>ak47</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\bin\Windows Phone\Debug\Content\ak47.xnb</Output>
+      <Time>2012-09-11T18:01:47.1133262-07:00</Time>
+    </Item>
+    <Item>
+      <Source>colt.png</Source>
+      <Name>colt</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\bin\Windows Phone\Debug\Content\colt.xnb</Output>
+      <Time>2012-09-11T18:01:47.1445276-07:00</Time>
+    </Item>
+    <Item>
+      <Source>revolver.png</Source>
+      <Name>revolver</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\bin\Windows Phone\Debug\Content\revolver.xnb</Output>
+      <Time>2012-09-11T18:01:47.1289269-07:00</Time>
+    </Item>
+    <Item>
+      <Source>shotgun.png</Source>
+      <Name>shotgun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\bin\Windows Phone\Debug\Content\shotgun.xnb</Output>
+      <Time>2012-09-11T18:01:47.1289269-07:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{628466F3-6317-4ED7-ADAB-40221A4A761E}</ContentProjectGUID>
+      <TargetPlatform>WindowsPhone</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobileContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\obj\Windows Phone\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\C02122472\Desktop\ch4hw_mobile\ch4hw_mobile\ch4hw_mobile\bin\Windows Phone\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-05-18T12:29:50.8116789-07:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

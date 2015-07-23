@@ -1,0 +1,11 @@
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Background\Background\bin\x86\Debug\Content\bg1.xnb
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Background\Background\bin\x86\Debug\Content\bg2.xnb
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Background\Background\bin\x86\Debug\Content\bg3.xnb
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Background\Background\bin\x86\Debug\Content\bg4.xnb
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Background\Background\bin\x86\Debug\Content\bg5.xnb
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Background\Background\bin\x86\Debug\Background.exe
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Background\Background\bin\x86\Debug\Background.pdb
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Background\Background\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Background\Background\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Background\Background\obj\x86\Debug\Background.exe
+c:\users\student\documents\visual studio 2010\Projects\ch7hw\Background\Background\obj\x86\Debug\Background.pdb

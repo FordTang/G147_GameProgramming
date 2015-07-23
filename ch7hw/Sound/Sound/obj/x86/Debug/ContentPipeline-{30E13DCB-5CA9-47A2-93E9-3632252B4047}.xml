@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{30E13DCB-5CA9-47A2-93E9-3632252B4047}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>c:\users\student\documents\visual studio 2010\Projects\ch7hw\Sound\SoundContent\</RootDirectory>
+      <LoggerRootDirectory>c:\users\student\documents\visual studio 2010\Projects\ch7hw\Sound\Sound\</LoggerRootDirectory>
+      <IntermediateDirectory>c:\users\student\documents\visual studio 2010\Projects\ch7hw\Sound\Sound\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>c:\users\student\documents\visual studio 2010\Projects\ch7hw\Sound\Sound\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-05-18T12:29:50.8116789-07:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
